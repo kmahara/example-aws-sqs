@@ -1,0 +1,19 @@
+app:
+  aws:
+    endpoint: https://ap-northeast-1.amazonaws.com/
+cloud:
+  aws:
+    credentials:
+      profileName:
+      instanceProfile: false
+    region:
+      auto: false
+      static: ap-northeast-1
+    stack:
+      auto: false
+spring:
+  main:
+    banner-mode: off
+  metrics:
+    export:
+      enabled: false

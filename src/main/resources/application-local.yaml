@@ -1,0 +1,3 @@
+app:
+  aws:
+    endpoint: http://localhost:4566/

@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+      - "4571:4571"
+      - "${PORT_WEB_UI-7777}:${PORT_WEB_UI-7777}"
+    environment:
+      - DEBUG=1
+      - DEFAULT_REGION=ap-northeast-1
+      - SERVICES=sns,sqs
+      - PORT_WEB_UI=${PORT_WEB_UI-7777}
